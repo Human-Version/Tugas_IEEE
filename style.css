@@ -1,0 +1,177 @@
+/*https://coolors.co/3d5a80-98c1d9-e0fbfc-ee6c4d-293241*/
+
+body {
+    background: url(bg2.png) no-repeat;
+    background-size: 100% 100%;
+    background-attachment:fixed;    
+    margin:0px;
+    padding:0px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu {
+    width: 300px;
+    background-color: #293241;
+    text-align: center;
+}
+
+.profile{
+    border-bottom: 3px solid #3d5a80 ;
+}
+
+.photo img{
+    width: 50%;
+    border-radius: 50%;
+    border: 10px solid #3d5a80;
+}
+
+.name a{
+    display: block;
+    padding-bottom: 5px;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+nav ul li{
+    margin-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fdfcdc;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #f07167;
+}
+
+/*bagian content*/
+#content section{
+    height: 100vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#content section div {
+    width: 100%;
+}
+
+h1,h2{
+    padding: 0px 20px 0px 20px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 100px;
+    text-transform: uppercase;
+    background-color: #ee6c4d;
+    color: #ffffff;
+}
+h3{
+    color: #e0fbfc;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.resume{
+    color: #e0fbfc;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.isi{
+    flex-basis: 75%;
+    color: #e0fbfc;
+}
+
+.kolom{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.kiri{
+    flex-basis: 75%;
+    color: #e0fbfc;
+}
+
+.kanan{
+    flex-basis: 25%;
+    margin-top: 15px;
+    color: #e0fbfc;
+}
+
+
+@media screen and (max-width:991.98px){
+    #wrapper {
+        display: block;
+    }
+    #menu {
+        width: 100%;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+    .profile {
+        display: flex;
+    }
+    .profile .foto {
+        width: 40%;
+        text-align: right;
+        padding-right: 10px;
+    }
+    .foto img {
+        width: 30px;
+        margin-top: 10px;
+        border: 5px solid #3D5A80;
+    }
+    .name a {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    nav ul {
+        width: 100%;
+        display: block;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        text-align: center;
+    }
+    nav ul li {
+        float: none;
+        display: inline-block;
+        padding:10px;
+    }
+    #content section {
+        display: block;
+        padding-top: 100px;
+    }
+    .kolom {
+        display: block;
+    }
+    .kolom .kiri,.kolom .kanan {
+        width: 100%;
+    }
+}
